@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-riix-orange: #FF3B1F;
+  --color-riix-dark: #0D0D0D;
+  --color-riix-gray: #1a1a1a;
+  --color-riix-cendre: #EDEDED;
+}
+
+/* Animations Hero */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 1s ease-out forwards;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 1s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 1s ease-out 0.8s forwards;
+  opacity: 0;
+}

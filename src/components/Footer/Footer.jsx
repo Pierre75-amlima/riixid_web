@@ -1,0 +1,30 @@
+import React from 'react';
+import FooterTop from './FooterTop';
+import FooterBottom from './FooterBottom';
+
+const Footer = () => {
+  return (
+    <footer style={styles.footer}>
+      <div style={styles.container}>
+        <FooterTop />
+        <FooterBottom />
+      </div>
+    </footer>
+  );
+};
+
+const styles = {
+  footer: {
+    padding: '40px 40px',
+    backgroundColor: '#f0f0f0',
+  },
+  container: {
+    backgroundColor: '#000',
+    borderRadius: '12px',
+    padding: '60px 60px 0 60px',
+    overflow: 'hidden',
+    position: 'relative',
+  },
+};
+
+export default Footer;
