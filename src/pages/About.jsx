@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-import About from "../components/about/About";
+import About from "../components/About/About";
 import AboutUs from "../components/about-us/AboutUs";
 import Values from "../components/values/Values";
 import PartnerBanner from "../components/PartnerBanner/PartnerBanner";
