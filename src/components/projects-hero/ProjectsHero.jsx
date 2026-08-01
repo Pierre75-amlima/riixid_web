@@ -5,9 +5,16 @@ const ProjectsHero = () => {
   return (
     <section
       id="projects-hero"
-      className="relative w-full min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden bg-gradient-to-b from-black via-[#0f0f0f] to-[#1a1a1a]"
+      className="relative w-full min-h-screen flex items-center justify-center px-6 py-32 overflow-hidden "
     >
-      {/* Effet grain */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(255, 255, 255, 0.2) 0%, rgba(255,255,255,0.03) 40%, transparent 70%)",
+        }}
+      />
+
       <div
         className="pointer-events-none absolute inset-0 opacity-100 mix-blend-overlay"
         style={{
@@ -15,7 +22,6 @@ const ProjectsHero = () => {
         }}
       />
 
-      {/* Contenu */}
       <div className="relative z-10 w-full max-w-6xl mx-auto">
         <ProjectsHeroTitle />
         <ProjectsHeroDescription />

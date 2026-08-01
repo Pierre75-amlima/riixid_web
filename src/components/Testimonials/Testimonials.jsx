@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import sino from "../../assets/sino.jfif"; 
+import sino from "../../assets/sino.PNG"; 
 import TestimonialsHeader from "./TestimonialsHeader";
 import TestimonialCard from "./TestimonialCard";
 

@@ -1,4 +1,4 @@
-import sino from "../../assets/sino.jfif";
+import sino from "../../assets/sino.PNG";
 import RealisationsHeader from "./RealisationsHeader";
 import RealisationCard from "./RealisationCard";
 

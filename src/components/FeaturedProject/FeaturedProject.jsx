@@ -1,5 +1,5 @@
 import { FiArrowRight } from "react-icons/fi";
-import sino from "../../assets/sino.jfif";
+import nora from "../../assets/nora.jpg";
 
 export default function FeaturedProject() {
   return (
@@ -10,7 +10,7 @@ export default function FeaturedProject() {
           {/* Image du projet */}
           <div className="overflow-hidden rounded-2xl">
             <img
-              src={sino}
+              src={nora}
               alt="Sinofree"
               className="h-[500px] w-full object-cover"
             />
