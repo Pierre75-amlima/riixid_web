@@ -1,7 +1,7 @@
 export default function HeroSubtitle() {
   return (
     <p
-      className="mt-10 max-w-3xl mx-auto text-white text-base md:text-lg leading-relaxed
+      className=" max-w-3xl mx-auto text-white text-base md:text-lg leading-relaxed
                  animate-fade-up-delay"
     >
       Nous accompagnons les{" "}

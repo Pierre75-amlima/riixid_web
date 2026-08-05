@@ -1,8 +1,8 @@
 export default function TestimonialsHeader() {
   return (
-    <div className="mx-auto mb-14 max-w-3xl text-center">
+    <div className="mx-auto mb-14 max-w-4xl text-center">
       {/* Titre principal */}
-      <h2 className="text-4xl font-extrabold uppercase text-black md:text-5xl">
+      <h2 className="text-xl font-extrabold uppercase text-black md:text-6xl">
         Retours de nos partenaires
       </h2>
 
@@ -12,7 +12,7 @@ export default function TestimonialsHeader() {
       </p>
 
       {/* Description */}
-      <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-gray-500">
+      <p className="mx-auto text-sm leading-relaxed text-gray-500 md:whitespace-nowrap">
         Découvrez les expériences de ceux qui collaborent avec Riixid pour
         transformer leurs idées en projets à impact.
       </p>

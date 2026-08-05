@@ -1,21 +1,19 @@
-import diamant from "../../assets/diamant.jpeg";
-import capsule from "../../assets/capsule.jpeg";
+import propulseur from "../../assets/propulseur.png";
+import securite from "../../assets/securite.png";
 
 export default function PartnerBannerVisuals() {
   return (
     <>
-      {/* Diamant à gauche */}
       <img
-        src={diamant}
-        alt="Diamant décoratif"
-        className="absolute -bottom-23 left-20 h-40 w-40 object-contain mix-blend-screen md:h-56 md:w-56"
+        src={propulseur}
+        alt="propulseur décorative"
+        className="absolute -bottom-9 left-4 h-62 w-62 object-contain md:h-98 md:w-98 z-10"
       />
 
-      {/* Capsule à droite */}
       <img
-        src={capsule}
-        alt="Capsule décorative"
-        className="absolute -right-15 bottom-10 h-32 w-32 object-contain mix-blend-screen md:h-48 md:w-48"
+        src={securite}
+        alt="securite décoratif"
+        className="absolute right-1 -bottom-5 h-44 w-44 object-contain md:h-80 md:w-80 z-10"
       />
     </>
   );

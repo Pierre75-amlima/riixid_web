@@ -6,23 +6,17 @@ export default function HeroButtons() {
       {/* Bouton primaire */}
       <button
         className="group flex items-center gap-3 bg-riix-orange text-white 
-                   px-8 py-4 rounded-full font-medium text-sm
-                   hover:bg-white hover:text-black
-                   transition-all duration-300"
+                   px-8 py-4 rounded-full font-medium text-sm"
       >
         Démarrer un projet
         <FiArrowRight
-          size={18}
-          className="transition-transform duration-300 group-hover:translate-x-1"
-        />
+          size={18}  />
       </button>
 
       {/* Bouton secondaire */}
       <button
         className="border border-white/70 text-white 
-                   px-8 py-4 rounded-full font-medium text-sm
-                   hover:bg-white hover:text-black hover:border-white
-                   transition-all duration-300"
+                   px-8 py-4 rounded-full bg-white/15 font-medium text-sm"
       >
         Découvrir nos réalisations
       </button>

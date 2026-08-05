@@ -14,8 +14,9 @@ export default function SocialIcons() {
         <a
           key={i}
           href={href}
-          className="w-9 h-9 flex items-center justify-center rounded-full border border-white/60 text-white 
-                     hover:bg-riix-cendre hover:text-black hover:border-riix-cendre 
+          className="w-9 h-6 flex items-center justify-center rounded-full 
+                     bg-white/10 border border-white/60 text-white 
+                     hover:bg-white/25 hover:border-white/80
                      transition-all duration-300"
         >
           <Icon size={14} />

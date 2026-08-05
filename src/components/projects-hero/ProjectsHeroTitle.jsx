@@ -5,7 +5,7 @@ const ProjectsHeroTitle = () => {
       <span className="text-riix-orange">témoignent</span>
       <br />
       <span className="text-white">
-        de notre vision et de notre savoir-faire.
+        de notre vision et de notre <br />savoir-faire.
       </span>
     </h1>
   );

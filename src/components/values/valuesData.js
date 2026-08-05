@@ -1,9 +1,9 @@
-import { FaBrain } from "react-icons/fa";
+import strategieIcon from "../../assets/strategie.svg";
 
 export const valuesCards = [
   {
     id: 1,
-    icon: FaBrain,
+    icon: strategieIcon,
     title: "Parcours",
     subtitle: "Née d'une vision : rendre l'innovation accessible à tous.",
     description:
@@ -12,7 +12,7 @@ export const valuesCards = [
   },
   {
     id: 2,
-    icon: FaBrain,
+    icon: strategieIcon,
     title: "Mission",
     subtitle: "Transformer les idées en opportunités.",
     description:
@@ -21,7 +21,7 @@ export const valuesCards = [
   },
   {
     id: 3,
-    icon: FaBrain,
+    icon: strategieIcon,
     title: "Vision",
     subtitle: "Construire un avenir où chaque idée ambitieuse peut prendre forme.",
     description:
@@ -30,7 +30,7 @@ export const valuesCards = [
   },
   {
     id: 4,
-    icon: FaBrain,
+    icon: strategieIcon,
     title: "Engagement",
     subtitle: "Plus qu'une agence, un partenaire pour construire demain.",
     description:

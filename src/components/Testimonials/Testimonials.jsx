@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import sino from "../../assets/sino.PNG"; 
+import sino from "../../assets/sino.PNG";
 import TestimonialsHeader from "./TestimonialsHeader";
 import TestimonialCard from "./TestimonialCard";
 
@@ -48,15 +48,14 @@ export default function Testimonials() {
   // Duplique les données pour boucle infinie
   const extendedTestimonials = [...testimonialsData, ...testimonialsData];
 
-  // Défilement auto toutes les 3.5s
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => prev + 1);
-    }, 3500);
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
-  // Reset silencieux quand on atteint la 2e copie
+  // Reset silencieux
   useEffect(() => {
     if (currentIndex >= testimonialsData.length) {
       setTimeout(() => {
@@ -75,7 +74,7 @@ export default function Testimonials() {
     }
   }, [isTransitioning]);
 
-  // La carte "active" est celle du milieu (index + 1)
+  // La carte "active" 
   const activeIndex = currentIndex + 1;
 
   return (
@@ -85,26 +84,33 @@ export default function Testimonials() {
         <TestimonialsHeader />
 
         {/* Carousel */}
-        <div className="overflow-hidden">
+        <div className="relative">
+          
           <div
-            className={`flex ${
-              isTransitioning ? "transition-transform duration-700 ease-in-out" : ""
-            }`}
+            className="overflow-hidden"
             style={{
-              transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+              clipPath: "inset(0 6% 0 6%)",
             }}
           >
-            {extendedTestimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="w-1/3 flex-shrink-0 px-3"
-              >
-                <TestimonialCard
-                  {...testimonial}
-                  isActive={index === activeIndex}
-                />
-              </div>
-            ))}
+            <div
+              className={`flex ${
+                isTransitioning
+                  ? "transition-transform duration-700 ease-in-out"
+                  : ""
+              }`}
+              style={{
+                transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+              }}
+            >
+              {extendedTestimonials.map((testimonial, index) => (
+                <div key={index} className="w-1/3 flex-shrink-0 px-3">
+                  <TestimonialCard
+                    {...testimonial}
+                    isActive={index === activeIndex}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -16,12 +16,13 @@ const Footer = () => {
 const styles = {
   footer: {
     padding: '40px 40px',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#ffffff', 
   },
   container: {
     backgroundColor: '#000',
-    borderRadius: '12px',
-    padding: '60px 60px 0 60px',
+    borderRadius: '16px',
+    padding: '100px 60px 0 60px',
+    minHeight: '390px',
     overflow: 'hidden',
     position: 'relative',
   },

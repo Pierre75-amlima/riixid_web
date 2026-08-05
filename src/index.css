@@ -1,10 +1,24 @@
 @import "tailwindcss";
 
 @theme {
+  /* Couleurs custom */
   --color-riix-orange: #FF3B1F;
   --color-riix-dark: #0D0D0D;
   --color-riix-gray: #1a1a1a;
   --color-riix-cendre: #EDEDED;
+
+  /* Polices custom */
+  --font-bricolage: "Bricolage Grotesque", sans-serif;
+  --font-sora: "Sora", sans-serif;
+}
+
+/* Application globale des polices */
+body {
+  font-family: var(--font-sora);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bricolage);
 }
 
 /* Animations Hero */

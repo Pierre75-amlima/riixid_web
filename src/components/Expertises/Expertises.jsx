@@ -1,32 +1,30 @@
-import {
-  FiCpu,
-  FiEye,
-  FiCode,
-  FiVolume2,
-  FiZap,
-  FiMonitor,
-} from "react-icons/fi";
 import ExpertisesHeader from "./ExpertisesHeader";
 import ExpertiseCard from "./ExpertiseCard";
+import strategieIcon from "../../assets/strategie.svg";
+import uxUiIcon from "../../assets/ux-ui-design.svg";
+import developpementIcon from "../../assets/developpement.svg";
+import identiteIcon from "../../assets/identite-digitale.svg";
+import innovationIcon from "../../assets/innovation.svg";
+import formationIcon from "../../assets/formation.svg";
 
 const expertises = [
   // Rangée 1
   {
-    icon: FiCpu,
+    icon: strategieIcon,
     title: "Stratégie & Transformation digitale",
     description:
       "Nous aidons les entreprises à définir leur vision numérique et à mettre en place des solutions adaptées à leurs objectifs.",
     variant: "light",
   },
   {
-    icon: FiEye,
+    icon: uxUiIcon,
     title: "UX/UI Design & Expérience utilisateur",
     description:
       "Nous concevons des interfaces intuitives et des expériences digitales engageantes centrées sur les besoins des utilisateurs.",
     variant: "orange",
   },
   {
-    icon: FiCode,
+    icon: developpementIcon,
     title: "Développement de solutions digitales",
     description:
       "Nous transformons vos idées en sites web, applications, plateformes SaaS et outils numériques performants.",
@@ -34,21 +32,21 @@ const expertises = [
   },
   // Rangée 2
   {
-    icon: FiVolume2,
+    icon: identiteIcon,
     title: "Identité digitale & Communication",
     description:
       "Nous construisons des identités visuelles fortes et des contenus digitaux qui renforcent votre présence en ligne.",
     variant: "light",
   },
   {
-    icon: FiZap,
+    icon: innovationIcon,
     title: "Innovation & Automatisation",
     description:
       "Nous intégrons des technologies intelligentes pour optimiser vos processus et améliorer votre performance opérationnelle.",
     variant: "dark",
   },
   {
-    icon: FiMonitor,
+    icon: formationIcon,
     title: "Formation & Accompagnement digital",
     description:
       "Nous transmettons notre expertise pour aider les équipes et entrepreneurs à mieux maîtriser les outils numériques.",
