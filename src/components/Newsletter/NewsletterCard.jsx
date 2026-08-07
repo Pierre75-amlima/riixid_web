@@ -1,27 +1,28 @@
 export default function NewsletterCard({ item }) {
   return (
-    <div className="bg-white hover:bg-[#f2f2f3] border border-gray-100 rounded-2xl overflow-hidden flex flex-col transition-colors duration-300 cursor-pointer">
-      <div className="p-2.5">
+    <div className="flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white transition-colors duration-300 hover:bg-[#f2f2f3]">
+      <div className="p-2 sm:p-2.5">
         <img
           src={item.image}
           alt={item.title}
-          className="w-full h-52 object-cover rounded-xl"
+          className="w-full rounded-xl object-cover
+                     h-44 sm:h-48 md:h-52"
         />
       </div>
 
-      <div className="px-5 pb-4 flex flex-col flex-1">
-        <h3 className="text-[17px] font-semibold text-black mb-2 leading-snug line-clamp-2">
+      <div className="flex flex-1 flex-col px-4 pb-4 sm:px-5">
+        <h3 className="mb-2 line-clamp-2 text-[15px] font-semibold leading-snug text-black sm:text-[17px]">
           {item.title}
         </h3>
-        <p className="text-[13px] text-gray-500 mb-6 leading-relaxed line-clamp-2">
+        <p className="mb-5 line-clamp-2 text-[12px] leading-relaxed text-gray-500 sm:mb-6 sm:text-[13px]">
           {item.description}
         </p>
 
-        <div className="mt-auto flex items-center justify-between gap-2 flex-nowrap">
-          <span className="text-xs font-medium text-black whitespace-nowrap truncate">
+        <div className="mt-auto flex flex-nowrap items-center justify-between gap-2">
+          <span className="truncate whitespace-nowrap text-[11px] font-medium text-black sm:text-xs">
             {item.date}
           </span>
-          <span className="text-[11px] text-gray-600 bg-gray-100 px-2.5 py-1 rounded-full whitespace-nowrap shrink-0">
+          <span className="shrink-0 whitespace-nowrap rounded-full bg-gray-100 px-2.5 py-1 text-[10px] text-gray-600 sm:text-[11px]">
             {item.readTime}
           </span>
         </div>

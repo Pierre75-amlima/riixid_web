@@ -2,63 +2,86 @@ import { FiCheck, FiChevronRight } from "react-icons/fi";
 
 export default function NewsletterHero() {
   return (
-    <div className="max-w-5xl mx-auto bg-[#ececef] rounded-3xl px-8 md:px-14 py-14 md:py-16">
+    <div
+      className="mx-auto max-w-5xl rounded-3xl bg-[#ececef]
+                 px-5 py-10
+                 sm:px-8 sm:py-12
+                 md:px-14 md:py-16"
+    >
       {/* Titre principal */}
-      <h1 className="text-black text-6xl md:text-7xl font-bold text-center mb-6">
+      <h1
+        className="mb-4 text-center font-bold text-black
+                   text-3xl sm:text-5xl md:text-6xl lg:text-7xl
+                   sm:mb-6"
+      >
         Newsletter Créative
       </h1>
 
       {/* Sous-titre */}
-      <h2 className="text-black text-3xl md:text-4xl font-bold text-center mb-12 leading-snug">
-        Chaque lundi, une étincelle pour <br />
+      <h2
+        className="mb-8 text-center font-bold leading-snug text-black
+                   text-lg sm:text-2xl md:text-3xl lg:text-4xl
+                   sm:mb-12"
+      >
+        Chaque lundi, une étincelle pour{" "}
+        <br className="hidden sm:block" />
         stimuler votre imagination.
       </h2>
 
       {/* Liste avantages */}
-      <div className="max-w-3xl mx-auto space-y-4 mb-10">
-        <div className="flex items-center gap-3">
-          <span className="w-6 h-6 rounded-full bg-riix-orange flex items-center justify-center shrink-0">
+      <div className="mx-auto mb-8 max-w-3xl space-y-3 sm:mb-10 sm:space-y-4">
+        <div className="flex items-start gap-3 sm:items-center">
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-riix-orange">
             <FiCheck className="text-white" size={14} strokeWidth={3} />
           </span>
-          <p className="text-black text-[15px]">
-            <span className="font-bold">Un rendez-vous régulier :</span> chaque lundi à 8h30, gratuit et sans obligation.
+          <p className="text-[13px] text-black sm:text-[15px]">
+            <span className="font-bold">Un rendez-vous régulier :</span> chaque
+            lundi à 8h30, gratuit et sans obligation.
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <span className="w-6 h-6 rounded-full bg-riix-orange flex items-center justify-center shrink-0">
+        <div className="flex items-start gap-3 sm:items-center">
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-riix-orange">
             <FiCheck className="text-white" size={14} strokeWidth={3} />
           </span>
-          <p className="text-black text-[15px]">
-            <span className="font-bold">L'innovation au cœur :</span> campagnes, concepts et actualités
+          <p className="text-[13px] text-black sm:text-[15px]">
+            <span className="font-bold">L'innovation au cœur :</span> campagnes,
+            concepts et actualités
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
-          <span className="w-6 h-6 rounded-full bg-riix-orange flex items-center justify-center shrink-0">
+        <div className="flex items-start gap-3 sm:items-center">
+          <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-riix-orange">
             <FiCheck className="text-white" size={14} strokeWidth={3} />
           </span>
-          <p className="text-black text-[15px]">
-            <span className="font-bold">Les nouveautés de l'agence :</span> partenariats récents et campagnes innovantes signées Riixid.
+          <p className="text-[13px] text-black sm:text-[15px]">
+            <span className="font-bold">Les nouveautés de l'agence :</span>{" "}
+            partenariats récents et campagnes innovantes signées Riixid.
           </p>
         </div>
       </div>
 
       {/* Formulaire email */}
-      <div className="max-w-2xl mx-auto relative mb-6">
+      <div className="relative mx-auto mb-5 max-w-2xl sm:mb-6">
         <input
           type="email"
           placeholder="Entrez votre adresse email"
-          className="w-full bg-white rounded-full pl-6 pr-16 py-4 text-[15px] text-black placeholder-gray-400 outline-none shadow-sm"
+          className="w-full rounded-full bg-white text-[14px] text-black placeholder-gray-400 shadow-sm outline-none
+                     pl-5 pr-14 py-3
+                     sm:pl-6 sm:pr-16 sm:py-4 sm:text-[15px]"
         />
-        <button className="absolute right-2 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-riix-orange flex items-center justify-center text-white hover:bg-orange-600 transition">
-          <FiChevronRight size={22} />
+        <button
+          className="absolute right-1.5 top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full bg-riix-orange text-white transition hover:bg-orange-600
+                     h-9 w-9 sm:right-2 sm:h-11 sm:w-11"
+        >
+          <FiChevronRight className="text-lg sm:text-[22px]" />
         </button>
       </div>
 
       {/* Mention légale */}
-      <p className="text-center text-sm text-gray-500 max-w-2xl mx-auto">
-        Votre adresse e-mail est utilisée uniquement pour l'envoi de notre newsletter. Vous pouvez vous désabonner à tout moment.
+      <p className="mx-auto max-w-2xl text-center text-xs text-gray-500 sm:text-sm">
+        Votre adresse e-mail est utilisée uniquement pour l'envoi de notre
+        newsletter. Vous pouvez vous désabonner à tout moment.
       </p>
     </div>
   );
