@@ -29,7 +29,7 @@ const cards = [
 
 export default function ApproachCards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
       {cards.map((card, i) => (
         <ApproachCard key={i} {...card} />
       ))}

@@ -7,7 +7,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full min-h-screen flex items-start justify-center px-6 pt-56 pb-32"
+      className="relative w-full min-h-screen flex items-center justify-center
+                 bg-[#8b1010] px-4 py-16 sm:py-20 md:py-24 lg:py-28"
       style={{
         background: `
           radial-gradient(ellipse 80% 100% at 50% 0%, #a01515 0%, transparent 60%),

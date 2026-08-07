@@ -5,19 +5,25 @@ import HeroButtons from "./HeroButtons";
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen w-full flex flex-col items-center justify-center 
-                 bg-[#050505] px-6 py-50 overflow-hidden"
+      className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-[#050505]
+                 px-4 py-28 sm:px-6 sm:py-32 md:px-8 md:py-40 lg:px-6 lg:py-[12.5rem]"
     >
       {/* Lumière projetée depuis le bas à gauche */}
       <div
-        className="pointer-events-none absolute -bottom-40 -left-40 h-[750px] w-[800px] 
-                   rounded-full bg-white/25 blur-[160px]"
+        className="pointer-events-none absolute -bottom-24 -left-24 h-[420px] w-[420px]
+                   rounded-full bg-white/25 blur-[90px]
+                   sm:-bottom-28 sm:-left-28 sm:h-[520px] sm:w-[560px] sm:blur-[120px]
+                   md:-bottom-32 md:-left-32 md:h-[620px] md:w-[680px] md:blur-[140px]
+                   lg:-bottom-40 lg:-left-40 lg:h-[750px] lg:w-[800px] lg:blur-[160px]"
       />
 
       {/* Lumière projetée depuis le haut à droite */}
       <div
-        className="pointer-events-none absolute -top-40 -right-40 h-[600px] w-[600px] 
-                   rounded-full bg-white/25 blur-[120px]"
+        className="pointer-events-none absolute -top-20 -right-20 h-[320px] w-[320px]
+                   rounded-full bg-white/25 blur-[80px]
+                   sm:-top-24 sm:-right-24 sm:h-[420px] sm:w-[420px] sm:blur-[100px]
+                   md:-top-28 md:-right-28 md:h-[500px] md:w-[500px] md:blur-[110px]
+                   lg:-top-40 lg:-right-40 lg:h-[600px] lg:w-[600px] lg:blur-[120px]"
       />
 
       {/* Effet de grain */}
@@ -29,7 +35,7 @@ export default function Hero() {
       />
 
       {/* Contenu */}
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      <div className="relative z-10 mx-auto w-full max-w-6xl text-center">
         <HeroTitle />
         <HeroSubtitle />
         <HeroButtons />

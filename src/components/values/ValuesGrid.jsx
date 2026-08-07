@@ -3,7 +3,7 @@ import { valuesCards } from "./valuesData";
 
 const ValuesGrid = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto">
+    <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 sm:gap-6 md:grid-cols-2 md:gap-7 lg:gap-8">
       {valuesCards.map((card) => (
         <ValueCard
           key={card.id}

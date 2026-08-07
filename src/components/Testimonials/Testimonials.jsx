@@ -44,9 +44,22 @@ const testimonialsData = [
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(3);
 
-  // Duplique les données pour boucle infinie
   const extendedTestimonials = [...testimonialsData, ...testimonialsData];
+
+  useEffect(() => {
+    const handleResize = () => {
+      const w = window.innerWidth;
+      if (w < 640) setVisibleCount(1);      
+      else if (w < 1024) setVisibleCount(2); 
+      else setVisibleCount(3);               
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,7 +68,6 @@ export default function Testimonials() {
     return () => clearInterval(interval);
   }, []);
 
-  // Reset silencieux
   useEffect(() => {
     if (currentIndex >= testimonialsData.length) {
       setTimeout(() => {
@@ -67,31 +79,27 @@ export default function Testimonials() {
     }
   }, [currentIndex]);
 
-  // Réactive la transition après le reset
   useEffect(() => {
     if (!isTransitioning) {
       setTimeout(() => setIsTransitioning(true), 50);
     }
   }, [isTransitioning]);
 
-  // La carte "active" 
-  const activeIndex = currentIndex + 1;
+  const activeOffset = visibleCount === 1 ? 0 : visibleCount === 2 ? 0 : 1;
+  const activeIndex = currentIndex + activeOffset;
+
+  const clipInset =
+    visibleCount === 1 ? "0 0 0 0" : visibleCount === 2 ? "0 4% 0 4%" : "0 6% 0 6%";
 
   return (
-    <section className="w-full overflow-hidden bg-white px-6 py-24">
+    <section className="w-full overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <TestimonialsHeader />
 
         {/* Carousel */}
         <div className="relative">
-          
-          <div
-            className="overflow-hidden"
-            style={{
-              clipPath: "inset(0 6% 0 6%)",
-            }}
-          >
+          <div className="overflow-hidden" style={{ clipPath: `inset(${clipInset})` }}>
             <div
               className={`flex ${
                 isTransitioning
@@ -99,11 +107,15 @@ export default function Testimonials() {
                   : ""
               }`}
               style={{
-                transform: `translateX(-${currentIndex * (100 / 3)}%)`,
+                transform: `translateX(-${currentIndex * (100 / visibleCount)}%)`,
               }}
             >
               {extendedTestimonials.map((testimonial, index) => (
-                <div key={index} className="w-1/3 flex-shrink-0 px-3">
+                <div
+                  key={index}
+                  className="flex-shrink-0 px-2 sm:px-3"
+                  style={{ width: `${100 / visibleCount}%` }}
+                >
                   <TestimonialCard
                     {...testimonial}
                     isActive={index === activeIndex}

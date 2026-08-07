@@ -1,31 +1,23 @@
-import React from 'react';
-import FooterTop from './FooterTop';
-import FooterBottom from './FooterBottom';
+import React from "react";
+import FooterTop from "./FooterTop";
+import FooterBottom from "./FooterBottom";
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.container}>
+    <footer className="bg-white px-4 py-4 sm:px-6 sm:py-6 md:px-8 md:py-8 lg:px-10 xl:px-[40px]">
+      <div
+        className="relative overflow-hidden rounded-2xl bg-black
+                   px-4 pt-14 sm:px-6 sm:pt-16
+                   md:px-8 md:pt-20
+                   lg:px-12 lg:pt-24
+                   xl:px-[60px] xl:pt-[100px]
+                   min-h-[300px] sm:min-h-[340px] md:min-h-[390px]"
+      >
         <FooterTop />
         <FooterBottom />
       </div>
     </footer>
   );
-};
-
-const styles = {
-  footer: {
-    padding: '40px 40px',
-    backgroundColor: '#ffffff', 
-  },
-  container: {
-    backgroundColor: '#000',
-    borderRadius: '16px',
-    padding: '100px 60px 0 60px',
-    minHeight: '390px',
-    overflow: 'hidden',
-    position: 'relative',
-  },
 };
 
 export default Footer;

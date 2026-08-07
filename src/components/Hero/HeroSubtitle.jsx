@@ -1,13 +1,14 @@
 export default function HeroSubtitle() {
   return (
     <p
-      className=" max-w-3xl mx-auto text-white text-base md:text-lg leading-relaxed
-                 animate-fade-up-delay"
+      className="animate-fade-up-delay mx-auto max-w-xs text-sm leading-relaxed text-white
+                 sm:max-w-2xl sm:text-base
+                 md:max-w-3xl md:text-lg"
     >
       Nous accompagnons les{" "}
-      <span className="text-gray-400 font-medium">entreprises</span>,{" "}
-      <span className="text-gray-400 font-medium">startups</span> et{" "}
-      <span className="text-gray-400 font-medium">organisations</span> dans la
+      <span className="font-medium text-gray-400">entreprises</span>,{" "}
+      <span className="font-medium text-gray-400">startups</span> et{" "}
+      <span className="font-medium text-gray-400">organisations</span> dans la
       conception de solutions digitales innovantes, d'expériences utilisateurs
       performantes et de produits numériques créateurs de valeur.
     </p>

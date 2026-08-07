@@ -46,3 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: fade-up 1s ease-out 0.8s forwards;
   opacity: 0;
 }
+
+.logo-orange {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(94%) saturate(2496%) hue-rotate(357deg) brightness(97%) contrast(100%);
+}

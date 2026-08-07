@@ -3,10 +3,11 @@ import PartnerBannerVisuals from "./PartnerBannerVisuals";
 
 export default function PartnerBanner() {
   return (
-    <section className="w-full bg-white px-6 py-12">
+    <section className="w-full bg-white px-4 py-8 sm:px-6 sm:py-10 md:py-12">
       <div className="mx-auto max-w-6xl">
         <div
-          className="relative overflow-hidden rounded-3xl px-8 py-10"
+          className="relative overflow-hidden rounded-3xl
+                     px-5 py-8 sm:px-6 sm:py-9 md:px-8 md:py-10"
           style={{
             background: `
               radial-gradient(ellipse 80% 100% at 100% 50%, #ff6b3d 0%, transparent 50%),
@@ -16,7 +17,7 @@ export default function PartnerBanner() {
             `,
           }}
         >
-          {/* Texture "grain" par-dessus - opacité augmentée */}
+          {/* Texture "grain" */}
           <div
             className="pointer-events-none absolute inset-1 opacity-[1] mix-blend-overlay"
             style={{
@@ -24,7 +25,7 @@ export default function PartnerBanner() {
             }}
           />
 
-          {/* Halo lumineux subtil en haut-droite */}
+          {/* Halo lumineux */}
           <div
             className="pointer-events-none absolute -top-20 -right-20 h-96 w-96 rounded-full opacity-40 blur-3xl"
             style={{ background: "radial-gradient(circle, #f08644 0%, transparent 70%)" }}

@@ -1,6 +1,8 @@
 const AboutDescription = ({ text }) => {
   return (
-    <p className="text-center text-lg md:text-xl text-white/80 max-w-3xl mx-auto mt-8 leading-relaxed font-sans">
+    <p className="mx-auto mt-6 max-w-3xl text-center text-white/80 leading-relaxed
+                  text-base sm:text-lg md:text-xl
+                  px-2">
       {text}
     </p>
   );

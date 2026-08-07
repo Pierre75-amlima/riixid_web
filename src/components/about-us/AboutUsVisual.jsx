@@ -1,8 +1,10 @@
 const AboutUsVisual = () => {
   return (
-    <div className="mt-12 w-full max-w-6xl mx-auto">
-      <div className="w-full h-[400px] md:h-[500px] lg:h-[500px] bg-gray-300 rounded-3xl overflow-hidden">
-      </div>
+    <div className="mx-auto mt-8 w-full max-w-6xl sm:mt-10 md:mt-12">
+      <div
+        className="w-full overflow-hidden rounded-3xl bg-gray-300
+                   h-52 sm:h-72 md:h-[400px] lg:h-[500px]"
+      ></div>
     </div>
   );
 };

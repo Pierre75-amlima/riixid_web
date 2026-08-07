@@ -8,7 +8,6 @@ import innovationIcon from "../../assets/innovation.svg";
 import formationIcon from "../../assets/formation.svg";
 
 const expertises = [
-  // Rangée 1
   {
     icon: strategieIcon,
     title: "Stratégie & Transformation digitale",
@@ -30,7 +29,6 @@ const expertises = [
       "Nous transformons vos idées en sites web, applications, plateformes SaaS et outils numériques performants.",
     variant: "light",
   },
-  // Rangée 2
   {
     icon: identiteIcon,
     title: "Identité digitale & Communication",
@@ -56,11 +54,11 @@ const expertises = [
 
 export default function Expertises() {
   return (
-    <section className="w-full bg-white px-6 py-24">
+    <section className="w-full bg-white px-4 py-16 sm:px-6 sm:py-20 md:px-8 md:py-24 lg:px-10">
       <div className="mx-auto max-w-6xl">
         <ExpertisesHeader />
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {expertises.map((exp, i) => (
             <ExpertiseCard key={i} {...exp} />
           ))}
