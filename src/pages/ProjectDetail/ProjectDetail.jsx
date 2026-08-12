@@ -2,7 +2,7 @@ import { useParams, Navigate } from "react-router-dom";
 import projectsData from "./projectsData";
 
 import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/Footer/Footer";
 
 import ProjectIntro from "./ProjectIntro";
 import ProjectContent from "./ProjectContent";
