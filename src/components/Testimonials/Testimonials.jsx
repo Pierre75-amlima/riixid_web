@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import sino from "../../assets/sino.PNG";
 import TestimonialsHeader from "./TestimonialsHeader";
 import TestimonialCard from "./TestimonialCard";
@@ -45,22 +45,25 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [visibleCount, setVisibleCount] = useState(3);
+  const trackRef = useRef(null);
 
+  // Duplication pour boucle infinie
   const extendedTestimonials = [...testimonialsData, ...testimonialsData];
 
+  // Responsive : nombre de cards visibles
   useEffect(() => {
     const handleResize = () => {
       const w = window.innerWidth;
-      if (w < 640) setVisibleCount(1);      
-      else if (w < 1024) setVisibleCount(2); 
-      else setVisibleCount(3);               
+      if (w < 640) setVisibleCount(1);
+      else if (w < 1024) setVisibleCount(2);
+      else setVisibleCount(3);
     };
-
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Auto-scroll toutes les 2s
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => prev + 1);
@@ -68,20 +71,24 @@ export default function Testimonials() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
+  // Boucle infinie SANS retour visible
+  const handleTransitionEnd = () => {
     if (currentIndex >= testimonialsData.length) {
-      setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(0);
-      }, 700);
-    } else {
-      setIsTransitioning(true);
+      // On désactive l'animation
+      setIsTransitioning(false);
+      // On revient à la position 0 (invisible car identique visuellement)
+      setCurrentIndex(0);
     }
-  }, [currentIndex]);
+  };
 
+  // Après reset, on réactive l'animation
   useEffect(() => {
     if (!isTransitioning) {
-      setTimeout(() => setIsTransitioning(true), 50);
+      // petit délai pour laisser le DOM appliquer le reset
+      const id = requestAnimationFrame(() => {
+        setIsTransitioning(true);
+      });
+      return () => cancelAnimationFrame(id);
     }
   }, [isTransitioning]);
 
@@ -89,18 +96,22 @@ export default function Testimonials() {
   const activeIndex = currentIndex + activeOffset;
 
   const clipInset =
-    visibleCount === 1 ? "0 0 0 0" : visibleCount === 2 ? "0 4% 0 4%" : "0 6% 0 6%";
+    visibleCount === 1
+      ? "0 0 0 0"
+      : visibleCount === 2
+      ? "0 4% 0 4%"
+      : "0 6% 0 6%";
 
   return (
     <section className="w-full overflow-hidden bg-white px-4 py-16 sm:px-6 sm:py-20 md:py-24">
       <div className="mx-auto max-w-7xl">
-        {/* Header */}
         <TestimonialsHeader />
 
-        {/* Carousel */}
         <div className="relative">
           <div className="overflow-hidden" style={{ clipPath: `inset(${clipInset})` }}>
             <div
+              ref={trackRef}
+              onTransitionEnd={handleTransitionEnd}
               className={`flex ${
                 isTransitioning
                   ? "transition-transform duration-700 ease-in-out"

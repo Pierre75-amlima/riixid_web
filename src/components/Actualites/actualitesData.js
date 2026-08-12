@@ -2,131 +2,51 @@ import monnaie from "../../assets/monnaie.jfif";
 import biere from "../../assets/biere.jfif";
 
 const actualitesData = [
-  // Rangée 1
   {
     id: 1,
+    slug: "cette-biere-transforme-des-bottes-de-foin",
     image: biere,
-    title: "Cette bière transforme des bottes de foin en canettes pour valoriser s...",
-    description: "Dix versions de billets sont à découvrir et à sélectionner par les Européens.",
-    date: "Participation jusqu'au : 21 septembre 2026",
+    title:
+      "Cette bière transforme des bottes de foin en canettes pour valoriser ses agriculteurs",
+    description:
+      "Dix versions de billets sont à découvrir et à sélectionner par les Européens.",
+    date: "Le 5 août 2026",
     readTime: "5 min de lecture",
-  },
-  {
-    id: 2,
-    image: monnaie,
-    title: "Choisissez le nouveau visage des billets en euros",
-    description: "La Banque centrale européenne vous invite à prendre part au vote public.",
-    date: "Vote ouvert jusqu'au : 21 septembre 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 3,
-    image: monnaie,
-    title: "La Banque centrale européenne vous laisse voter pour le design des futu...",
-    description: "La BCE dévoile dix maquettes pour ses futurs billets en euros et laisse les Européens voter jusqu'au 21 septembre.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
+    author: "Maxime Delmas",
+
+    intro: [
+      "Busch Canada vient de trouver une façon inattendue de remercier les cultivateurs derrière sa **bière**. La marque a habillé des bottes de foin dans les champs de la Saskatchewan avec le visuel de son édition limitée Farmer's Pack, transformant le paysage rural en gigantesque packaging à ciel ouvert.",
+      "Baptisé « Baleboards », le dispositif ne se contente pas d'occuper l'espace visuellement. Busch reverse aux agriculteurs participants le même tarif qu'elle paierait pour un panneau publicitaire classique en ville, faisant de chaque botte de foin un support rémunéré au juste prix du marché.",
+    ],
+
+    content: [
+      { type: "cta" },
+      {
+        type: "section",
+        title: "Un packaging qui raconte le terroir",
+        text: "Le Farmer's Pack célèbre l'orge canadienne qui entre dans la composition de chaque bière Busch, avec un visuel de canette directement inspiré des champs où elle pousse. Disponible uniquement dans les Prairies chez certains détaillants et en quantités limitées, le pack fonctionne comme un point de départ logique à l'opération Baleboards, qui vient prolonger cette esthétique jusque dans les fermes elles-mêmes.",
+      },
+      { type: "image", src: biere, alt: "Champs de la Saskatchewan" },
+      {
+        type: "section",
+        title: "",
+        text: "L'insight stratégique tient en une phrase de Patrick Heembrock, directeur des marques Mainstream chez Labatt Breweries of Canada : plutôt que d'acheter un panneau dans un centre-ville, la marque a préféré construire le sien. Cette bascule illustre une forme de marketing expérientiel qui déplace physiquement le budget publicitaire vers les communautés rurales, sans passer par les canaux médias traditionnels.",
+      },
+      {
+        type: "section",
+        title: "Le terrain comme validation",
+        text: "Avant de lancer l'opération à grande échelle, Busch a testé le concept directement auprès des cultivateurs de la Saskatchewan. Leur accueil favorable a servi de validation de terrain, une étape qui ancre le dispositif dans une logique d'activation terrain plutôt que dans une simple opération de communication descendante pensée depuis un siège social.",
+      },
+      { type: "image", src: biere, alt: "Bottes de foin Busch" },
+      {
+        type: "section",
+        title: "Une extension programmée du budget média",
+        text: "Fort de ces retours positifs, Busch Canada annonce vouloir consacrer 10% de son budget média national à ce nouveau canal publicitaire agricole dès l'année prochaine. Labatt précise par ailleurs acheter chaque année pour environ 30 millions de dollars d'ingrédients auprès de fermes canadiennes et s'approvisionner à 98% en orge locale, ce qui replace les Baleboards dans une stratégie de long terme plutôt que dans un coup marketing isolé.",
+      },
+      { type: "image", src: biere, alt: "Ciel de Saskatchewan" },
+    ],
   },
 
-  // Rangée 2 (la carte centrale sera remplacée par la promo)
-  {
-    id: 4,
-    image: monnaie,
-    title: "La Banque centrale invite les Européens à choisir leur billet préfé...",
-    description: "Dix billets en compétition, votez pour celui qui vous inspire le plus.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 5,
-    isPromo: true, // carte rouge centrale
-  },
-  {
-    id: 6,
-    image: monnaie,
-    title: "Exprimez votre avis sur l'apparence des futurs billets en euros",
-    description: "La BCE présente dix concepts innovants pour les billets et attend votre vote.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-
-  // Rangée 3
-  {
-    id: 7,
-    image: monnaie,
-    title: "Les billets du futur sont entre vos mains",
-    description: "Découvrez les maquettes proposées par la BCE et exprimez votre choix.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 8,
-    image: monnaie,
-    title: "Votez pour le design des billets européens de demain",
-    description: "La BCE soumet dix maquettes à votre jugement jusqu'à la fin septembre.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 9,
-    image: monnaie,
-    title: "Dix designs pour le futur billet européen : à vous de décider",
-    description: "Votez pour la maquette qui représentera l'Europe dans les années à venir.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-
-  // Rangée 4
-  {
-    id: 10,
-    image: monnaie,
-    title: "Participez à la création des billets de demain",
-    description: "Votez pour votre billet préféré parmi dix propositions de la BCE.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 11,
-    image: monnaie,
-    title: "Votre avis compte pour les billets du futur",
-    description: "La BCE présente dix designs et attend vos votes citoyens.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 12,
-    image: monnaie,
-    title: "Découvrez les nouvelles propositions créatives pour les bill...",
-    description: "Participez au choix du design des billets de banque en votant jusqu'au 21 septembre.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-
-  // Rangée 5
-  {
-    id: 13,
-    image: monnaie,
-    title: "Immergez-vous dans l'univers des futurs billets en euros",
-    description: "La BCE lance un vote public sur dix propositions artistiques inédites.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 14,
-    image: monnaie,
-    title: "Votez pour le style des prochains billets de la zone euro",
-    description: "La Banque centrale européenne invite les citoyens à choisir parmi dix maquettes originales.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
-  {
-    id: 15,
-    image: monnaie,
-    title: "Participez à l'évolution des billets en euros",
-    description: "La Banque centrale européenne vous propose dix modèles à départager.",
-    date: "Le 24 juillet 2026",
-    readTime: "5 min de lecture",
-  },
 ];
 
 export default actualitesData;

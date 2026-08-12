@@ -7,8 +7,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full min-h-screen flex items-center justify-center
-                 bg-[#8b1010] px-4 py-16 sm:py-20 md:py-24 lg:py-28"
+      className="relative flex w-full items-start justify-center
+                 px-4 pb-16 pt-44
+                 sm:px-6 sm:pb-20 sm:pt-52
+                 md:px-8 md:pb-24 md:pt-60
+                 lg:px-6 lg:pb-28 lg:pt-64"
       style={{
         background: `
           radial-gradient(ellipse 80% 100% at 50% 0%, #a01515 0%, transparent 60%),
@@ -17,7 +20,7 @@ const About = () => {
         `,
       }}
     >
-      <div className="w-full max-w-7xl mx-auto">
+      <div className="mx-auto w-full max-w-7xl">
         <AboutTitle title={aboutContent.title} />
         <AboutDescription text={aboutContent.description} />
         <AboutActions actions={aboutContent.actions} />

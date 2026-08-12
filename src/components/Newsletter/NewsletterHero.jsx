@@ -8,27 +8,23 @@ export default function NewsletterHero() {
                  sm:px-8 sm:py-12
                  md:px-14 md:py-16"
     >
-      {/* Titre principal */}
       <h1
         className="mb-4 text-center font-bold text-black
-                   text-3xl sm:text-5xl md:text-6xl lg:text-7xl
-                   sm:mb-6"
+             text-4xl sm:text-5xl md:text-6xl lg:text-7xl
+             sm:mb-6"
       >
         Newsletter Créative
       </h1>
 
-      {/* Sous-titre */}
       <h2
         className="mb-8 text-center font-bold leading-snug text-black
                    text-lg sm:text-2xl md:text-3xl lg:text-4xl
                    sm:mb-12"
       >
-        Chaque lundi, une étincelle pour{" "}
-        <br className="hidden sm:block" />
+        Chaque lundi, une étincelle pour <br className="hidden sm:block" />
         stimuler votre imagination.
       </h2>
 
-      {/* Liste avantages */}
       <div className="mx-auto mb-8 max-w-3xl space-y-3 sm:mb-10 sm:space-y-4">
         <div className="flex items-start gap-3 sm:items-center">
           <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-riix-orange">
@@ -61,7 +57,6 @@ export default function NewsletterHero() {
         </div>
       </div>
 
-      {/* Formulaire email */}
       <div className="relative mx-auto mb-5 max-w-2xl sm:mb-6">
         <input
           type="email"
@@ -78,7 +73,6 @@ export default function NewsletterHero() {
         </button>
       </div>
 
-      {/* Mention légale */}
       <p className="mx-auto max-w-2xl text-center text-xs text-gray-500 sm:text-sm">
         Votre adresse e-mail est utilisée uniquement pour l'envoi de notre
         newsletter. Vous pouvez vous désabonner à tout moment.
