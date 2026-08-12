@@ -1,16 +1,16 @@
 import { useParams, Navigate } from "react-router-dom";
-import actualitesData from "../../components/actualites/actualitesData";
+import actualitesData from "../../components/Actualites/actualitesData";
 
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 import ScrollTop from "../../components/ScrollTop";
 
 import DetailHeader from "./DetailHeader";
 import DetailIntro from "./DetailIntro";
 import DetailContent from "./DetailContent";
 
-import NewsletterHero from "../../components/newsletter/NewsletterHero";
-import NewsletterList from "../../components/newsletter/NewsletterList";
+import NewsletterHero from "../../components/Newsletter/NewsletterHero";
+import NewsletterList from "../../components/Newsletter/NewsletterList";
 
 export default function ActualiteDetail() {
   const { slug } = useParams();
