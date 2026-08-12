@@ -1,11 +1,11 @@
 import noracash from "../../assets/nora.jpg";
-import noraLogo from "../../assets/noracash-logo.png";
-import noraPattern from "../../assets/noracash-pattern.png";
-import noraApp from "../../assets/noracash-app.png";
-import noraScreen1 from "../../assets/noracash-1.png";
-import noraScreen2 from "../../assets/noracash-2.png";
-import noraScreen3 from "../../assets/noracash-3.png";
-import noraScreen4 from "../../assets/noracash-4.png";
+import noraLogo from "../../assets/noracash-logo.PNG";
+import noraPattern from "../../assets/noracash-pattern.PNG";
+import noraApp from "../../assets/noracash-app.PNG";
+import noraScreen1 from "../../assets/noracash-1.PNG";
+import noraScreen2 from "../../assets/noracash-2.PNG";
+import noraScreen3 from "../../assets/noracash-3.PNG";
+import noraScreen4 from "../../assets/noracash-4.PNG";
 import sstImg from "../../assets/sst.png";
 
 const projectsData = [
@@ -84,4 +84,4 @@ const projectsData = [
   },
 ];
 
-export default projectsData;
+export default projectsDaPNG
