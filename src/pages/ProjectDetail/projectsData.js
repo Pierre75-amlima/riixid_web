@@ -84,4 +84,4 @@ const projectsData = [
   },
 ];
 
-export default projectsDaPNG
+export default projectsData
