@@ -6,7 +6,7 @@ import noraScreen1 from "../../assets/noracash-1.PNG";
 import noraScreen2 from "../../assets/noracash-2.PNG";
 import noraScreen3 from "../../assets/noracash-3.PNG";
 import noraScreen4 from "../../assets/noracash-4.PNG";
-import sstImg from "../../assets/sst.png";
+import sstImg from "../../assets/sst.PNG";
 
 const projectsData = [
   {
