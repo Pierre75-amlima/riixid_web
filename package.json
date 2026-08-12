@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": "20.x"
-  },
+  "node": "24.x"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.1.0",
     "react": "^18.3.1",
