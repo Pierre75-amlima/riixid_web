@@ -1,7 +1,7 @@
 import { useParams, Navigate } from "react-router-dom";
 import projectsData from "./projectsData";
 
-import Navbar from "../../components/navbar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 
 import ProjectIntro from "./ProjectIntro";
@@ -15,7 +15,6 @@ export default function ProjectDetail() {
 
   return (
     <>
-      {/* 1ère section : fond NOIR */}
       <section className="relative w-full bg-black">
         <Navbar />
 
@@ -38,7 +37,6 @@ export default function ProjectDetail() {
         </div>
       </section>
 
-      {/* 2e section : dégradé gris -> blanc */}
       <section className="w-full bg-gradient-to-b from-gray-100 via-white to-white">
         <div className="mx-auto max-w-6xl px-4 pb-12 sm:px-6 sm:pb-16 md:px-8">
           {project.heroImage && (
