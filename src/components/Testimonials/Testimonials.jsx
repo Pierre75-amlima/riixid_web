@@ -9,35 +9,35 @@ const defaultTestimonials = [
       "Un vrai talent pour comprendre nos besoins. Il a transformé nos idées en une interface intuitive et agréable à utiliser.",
     name: "Aïcha K.",
     role: "CEO de CreativHub",
-    photo: "/src/assets/sino.PNG",
+    photo: "/sino.PNG",
   },
   {
     quote:
       "Un travail soigné et efficace ! Grâce à Constantin, nos utilisateurs adorent l'expérience de navigation et reviennent régulièrement.",
     name: "Marie T",
     role: "Fondatrice de ZenApp",
-    photo: "/src/assets/sino.PNG",
+    photo: "/sino.PNG",
   },
   {
     quote:
       "Collaboration fluide et résultats impressionnants. Son design a vraiment mis notre site en valeur et reflète parfaitement notre vision.",
     name: "Paul D",
     role: "Responsable Marketing chez WebNest",
-    photo: "/src/assets/sino.PNG",
+    photo: "/sino.PNG",
   },
   {
     quote:
       "Constantin a su créer un design moderne et fonctionnel. Il a parfaitement aligné son travail avec notre identité visuelle.",
     name: "Thomas B",
     role: "Directeur de ProActive Solutions",
-    photo: "/src/assets/sino.PNG",
+    photo: "/sino.PNG",
   },
   {
     quote:
       "Rapide, créatif et à l'écoute. Travailler avec lui a été un vrai plaisir, et nous avons hâte de collaborer à nouveau.",
     name: "Sarah M.",
     role: "Community Manager chez EkoWorld",
-    photo: "/src/assets/sino.PNG",
+    photo: "/sino.PNG",
   },
 ];
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
-import nora from "../../assets/nora.jpg";
+
+const nora = "/nora.jpg";
 
 export default function FeaturedProject({
   variant = "featured",

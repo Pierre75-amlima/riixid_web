@@ -1,5 +1,5 @@
-import propulseur from "../../assets/propulseur.png";
-import securite from "../../assets/securite.png";
+const propulseur = "/propulseur.png";
+const securite = "/securite.png";
 
 export default function ActualitePromoCard() {
   return (

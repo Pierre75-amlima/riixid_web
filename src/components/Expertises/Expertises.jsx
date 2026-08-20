@@ -5,42 +5,42 @@ import { getExpertises, normalizeStrapiImage } from "../../lib/api";
 
 const defaultExpertises = [
   {
-    icon: "/src/assets/strategie.svg",
+    icon: "/strategie.svg",
     title: "Stratégie & Transformation digitale",
     description:
       "Nous aidons les entreprises à définir leur vision numérique et à mettre en place des solutions adaptées à leurs objectifs.",
     variant: "light",
   },
   {
-    icon: "/src/assets/ux-ui-design.svg",
+    icon: "/ux-ui-design.svg",
     title: "UX/UI Design & Expérience utilisateur",
     description:
       "Nous concevons des interfaces intuitives et des expériences digitales engageantes centrées sur les besoins des utilisateurs.",
     variant: "orange",
   },
   {
-    icon: "/src/assets/developpement.svg",
+    icon: "/developpement.svg",
     title: "Développement de solutions digitales",
     description:
       "Nous transformons vos idées en sites web, applications, plateformes SaaS et outils numériques performants.",
     variant: "light",
   },
   {
-    icon: "/src/assets/identite-digitale.svg",
+    icon: "/identite-digitale.svg",
     title: "Identité digitale & Communication",
     description:
       "Nous construisons des identités visuelles fortes et des contenus digitaux qui renforcent votre présence en ligne.",
     variant: "light",
   },
   {
-    icon: "/src/assets/innovation.svg",
+    icon: "/innovation.svg",
     title: "Innovation & Automatisation",
     description:
       "Nous intégrons des technologies intelligentes pour optimiser vos processus et améliorer votre performance opérationnelle.",
     variant: "dark",
   },
   {
-    icon: "/src/assets/formation.svg",
+    icon: "/formation.svg",
     title: "Formation & Accompagnement digital",
     description:
       "Nous transmettons notre expertise pour aider les équipes et entrepreneurs à mieux maîtriser les outils numériques.",

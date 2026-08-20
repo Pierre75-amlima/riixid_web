@@ -1,8 +1,8 @@
 import { FiArrowRight } from "react-icons/fi";
 import { useContactModal } from "../../context/ContactModalContext";
 
-import propulseur from "../../assets/propulseur.png";
-import securite from "../../assets/securite.png";
+const propulseur = "/propulseur.png";
+const securite = "/securite.png";
 
 export default function ProjectCTA() {
   const { openModal } = useContactModal();

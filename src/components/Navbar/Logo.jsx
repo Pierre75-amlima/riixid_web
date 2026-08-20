@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/Logo.svg";
+
+const logo = "/Logo.svg";
 
 export default function Logo({ variant = "dark" }) {
   const filterClass =

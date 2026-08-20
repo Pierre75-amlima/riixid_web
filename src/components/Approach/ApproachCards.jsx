@@ -4,21 +4,21 @@ import { getApproachCards, normalizeStrapiImage } from "../../lib/api";
 
 const defaultCards = [
   {
-    image: "/src/assets/img1.jpg",
+    image: "/img1.jpg",
     badge: "Stratégie digitale",
     title: "Comprendre avant de concevoir",
     description:
       "La BCE dévoile dix maquettes pour ses futurs billets en euros et laisse les Européens voter jusqu'au 21 septembre.",
   },
   {
-    image: "/src/assets/img2.jpg",
+    image: "/img2.jpg",
     badge: "Design & Expérience utilisateur",
     title: "Créer des expériences qui marquent",
     description:
       "Nous concevons des interfaces modernes et intuitives qui facilitent l'interaction entre vos clients et votre marque.",
   },
   {
-    image: "/src/assets/img3.jpg",
+    image: "/img3.jpg",
     badge: "Technologie & Innovation",
     title: "Transformer les idées en solutions concrètes.",
     description:

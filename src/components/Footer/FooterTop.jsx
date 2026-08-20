@@ -7,7 +7,7 @@ const iconMap = {
   whatsapp: FaWhatsapp,
 };
 
-export default function FooterTop({ logo = "/src/assets/Logo.svg", socialLinks = [] }) {
+export default function FooterTop({ logo = "/Logo.svg", socialLinks = [] }) {
   const socials = socialLinks.length
     ? socialLinks
     : [

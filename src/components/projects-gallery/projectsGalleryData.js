@@ -1,5 +1,5 @@
-import sino from "../../assets/sino.PNG";
-import sst from "../../assets/sst.PNG";
+const sino = "/sino.PNG";
+const sst = "/sst.PNG";
 
 export const projectsRow1 = [
   {

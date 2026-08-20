@@ -1,4 +1,4 @@
-import monnaie from "../../assets/monnaie.jfif";
+const monnaie = "/monnaie.jfif";
 
 const newsletterData = [
   {

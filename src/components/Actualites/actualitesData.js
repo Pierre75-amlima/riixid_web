@@ -1,5 +1,5 @@
-import monnaie from "../../assets/monnaie.jfif";
-import biere from "../../assets/biere.jfif";
+const monnaie = "/monnaie.jfif";
+const biere = "/biere.jfif";
 
 const actualitesData = [
   {

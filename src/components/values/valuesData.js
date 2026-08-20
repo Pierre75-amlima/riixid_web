@@ -1,4 +1,4 @@
-import strategieIcon from "../../assets/strategie.svg";
+const strategieIcon = "/strategie.svg";
 
 export const valuesCards = [
   {

@@ -5,7 +5,7 @@ import { getNewsletterItems, normalizeStrapiImage } from "../../lib/api";
 const defaultNewsletterData = [
   {
     id: 1,
-    image: "/src/assets/monnaie.jfif",
+    image: "/monnaie.jfif",
     title: "La BCE ouvre la consultation sur le design des billets",
     description: "Dix versions de billets sont à découvrir et à sélectionner par les Européens.",
     date: "Le 24 juillet 2026",
@@ -13,7 +13,7 @@ const defaultNewsletterData = [
   },
   {
     id: 2,
-    image: "/src/assets/monnaie.jfif",
+    image: "/monnaie.jfif",
     title: "Choisissez le nouveau visage des billets en euros",
     description: "La Banque centrale européenne vous invite à prendre part au vote public.",
     date: "Le 24 juillet 2026",
@@ -21,7 +21,7 @@ const defaultNewsletterData = [
   },
   {
     id: 3,
-    image: "/src/assets/monnaie.jfif",
+    image: "/monnaie.jfif",
     title: "La Banque centrale européenne vous laisse voter pour le design des futurs billets",
     description: "La BCE dévoile dix maquettes pour ses futurs billets en euros et laisse les Européens voter jusqu'au 21 septembre.",
     date: "Le 24 juillet 2026",

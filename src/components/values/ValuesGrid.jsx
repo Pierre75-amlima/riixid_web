@@ -5,7 +5,7 @@ import { getValues, normalizeStrapiImage } from "../../lib/api";
 const defaultValues = [
   {
     id: 1,
-    icon: "/src/assets/strategie.svg",
+    icon: "/strategie.svg",
     title: "Parcours",
     subtitle: "Née d'une vision : rendre l'innovation accessible à tous.",
     description:
@@ -14,7 +14,7 @@ const defaultValues = [
   },
   {
     id: 2,
-    icon: "/src/assets/strategie.svg",
+    icon: "/strategie.svg",
     title: "Mission",
     subtitle: "Transformer les idées en opportunités.",
     description:
@@ -23,7 +23,7 @@ const defaultValues = [
   },
   {
     id: 3,
-    icon: "/src/assets/strategie.svg",
+    icon: "/strategie.svg",
     title: "Vision",
     subtitle: "Construire un avenir où chaque idée ambitieuse peut prendre forme.",
     description:
@@ -32,7 +32,7 @@ const defaultValues = [
   },
   {
     id: 4,
-    icon: "/src/assets/strategie.svg",
+    icon: "/strategie.svg",
     title: "Engagement",
     subtitle: "Plus qu'une agence, un partenaire pour construire demain.",
     description:

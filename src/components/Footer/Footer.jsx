@@ -7,7 +7,7 @@ const defaultSettings = {
   brandName: "RIIXID Group",
   footerTitle: "PROPULSEUR",
   copyright: "© 2026 RIIXID Group. Tous droits réservés.",
-  logo: "/src/assets/Logo.svg",
+  logo: "/Logo.svg",
   socialLinks: [
     { href: "#", type: "facebook" },
     { href: "#", type: "instagram" },

@@ -1,12 +1,12 @@
-import noracash from "../../assets/nora.jpg";
-import noraLogo from "../../assets/noracash-logo.PNG";
-import noraPattern from "../../assets/noracash-pattern.PNG";
-import noraApp from "../../assets/noracash-app.PNG";
-import noraScreen1 from "../../assets/noracash-1.PNG";
-import noraScreen2 from "../../assets/noracash-2.PNG";
-import noraScreen3 from "../../assets/noracash-3.PNG";
-import noraScreen4 from "../../assets/noracash-4.PNG";
-import sstImg from "../../assets/sst.PNG";
+const noracash = "/nora.jpg";
+const noraLogo = "/noracash-logo.PNG";
+const noraPattern = "/noracash-pattern.PNG";
+const noraApp = "/noracash-app.PNG";
+const noraScreen1 = "/noracash-1.PNG";
+const noraScreen2 = "/noracash-2.PNG";
+const noraScreen3 = "/noracash-3.PNG";
+const noraScreen4 = "/noracash-4.PNG";
+const sstImg = "/sst.PNG";
 
 const projectsData = [
   {
