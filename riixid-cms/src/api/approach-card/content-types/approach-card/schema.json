@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approach_cards",
+  "info": {
+    "singularName": "approach-card",
+    "pluralName": "approach-cards",
+    "displayName": "Approach Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

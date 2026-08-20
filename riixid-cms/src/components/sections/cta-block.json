@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_cta_blocks",
+  "info": {
+    "displayName": "CtaBlock",
+    "icon": "paperPlane"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

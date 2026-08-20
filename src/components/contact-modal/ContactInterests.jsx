@@ -1,15 +1,6 @@
-import { useState } from "react";
 import { interestsList } from "./contactData";
 
-const ContactInterests = () => {
-  const [selected, setSelected] = useState([1]);
-
-  const toggleInterest = (id) => {
-    setSelected((prev) =>
-      prev.includes(id) ? prev.filter((i) => i !== id) : [...prev, id]
-    );
-  };
-
+const ContactInterests = ({ selected, onToggle }) => {
   return (
     <div>
       <h3 className="mb-3 text-sm font-bold text-black sm:mb-4 sm:text-base">
@@ -23,7 +14,7 @@ const ContactInterests = () => {
             <button
               key={interest.id}
               type="button"
-              onClick={() => toggleInterest(interest.id)}
+              onClick={() => onToggle(interest.id)}
               className={`
                 rounded-full border font-medium transition-all duration-300
                 px-3.5 py-2 text-xs

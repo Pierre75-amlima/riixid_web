@@ -1,4 +1,4 @@
-const ContactForm = () => {
+const ContactForm = ({ formData, onChange, disabled }) => {
   return (
     <div className="space-y-5 sm:space-y-6">
       {/* 2 champs en ligne */}
@@ -9,10 +9,14 @@ const ContactForm = () => {
           </label>
           <input
             type="text"
+            name="fullName"
+            value={formData.fullName}
+            onChange={onChange}
+            disabled={disabled}
             placeholder="Jhon Smith"
             className="w-full rounded-lg border border-gray-300 bg-white text-sm text-black transition-colors
                        px-3.5 py-2.5 focus:border-riix-orange focus:outline-none
-                       sm:px-4 sm:py-3"
+                       sm:px-4 sm:py-3 disabled:opacity-50"
           />
         </div>
 
@@ -22,10 +26,14 @@ const ContactForm = () => {
           </label>
           <input
             type="email"
+            name="email"
+            value={formData.email}
+            onChange={onChange}
+            disabled={disabled}
             placeholder="email@gmail.com"
             className="w-full rounded-lg border border-gray-300 bg-white text-sm text-black transition-colors
                        px-3.5 py-2.5 focus:border-riix-orange focus:outline-none
-                       sm:px-4 sm:py-3"
+                       sm:px-4 sm:py-3 disabled:opacity-50"
           />
         </div>
       </div>
@@ -36,10 +44,14 @@ const ContactForm = () => {
           Description
         </label>
         <textarea
+          name="message"
+          value={formData.message}
+          onChange={onChange}
+          disabled={disabled}
           rows={5}
           className="w-full resize-none rounded-lg border border-gray-300 bg-white text-sm text-black transition-colors
                      px-3.5 py-2.5 focus:border-riix-orange focus:outline-none
-                     sm:px-4 sm:py-3"
+                     sm:px-4 sm:py-3 disabled:opacity-50"
         />
       </div>
     </div>

@@ -1,17 +1,23 @@
 import { Link } from "react-router-dom";
 
 export default function ActualiteCard({ item }) {
+  const imageSrc = item.imageUrl || item.image;
+
   return (
     <Link
       to={`/actualites/${item.slug}`}
       className="flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white transition-colors duration-300 hover:bg-[#f2f2f3]"
     >
       <div className="p-2 sm:p-2.5">
-        <img
-          src={item.image}
-          alt={item.title}
-          className="h-44 w-full rounded-xl object-cover sm:h-48 md:h-52"
-        />
+        {imageSrc ? (
+          <img
+            src={imageSrc}
+            alt={item.title}
+            className="h-44 w-full rounded-xl object-cover sm:h-48 md:h-52"
+          />
+        ) : (
+          <div className="h-44 w-full rounded-xl bg-gray-200 sm:h-48 md:h-52" />
+        )}
       </div>
 
       <div className="flex flex-1 flex-col px-4 pb-4 sm:px-5">

@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
-import projectsData from "./projectsData";
+import { getProjet, normalizeProjet } from "../../lib/api";
 
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
@@ -9,7 +10,41 @@ import ProjectContent from "./ProjectContent";
 
 export default function ProjectDetail() {
   const { slug } = useParams();
-  const project = projectsData.find((p) => p.slug === slug);
+  const [project, setProject] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let active = true;
+
+    async function loadProject() {
+      setLoading(true);
+      const data = await getProjet(slug);
+      if (!active) return;
+
+      const item = Array.isArray(data) ? data[0] : data;
+setProject(item ? normalizeProjet(item) : null);
+      setLoading(false);
+    }
+
+    loadProject();
+    return () => {
+      active = false;
+    };
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <>
+        <section className="relative w-full bg-black">
+          <Navbar />
+          <div className="mx-auto max-w-6xl px-4 pb-24 pt-40 text-center text-sm text-white sm:px-6 sm:pt-48 md:px-8 md:pt-56 lg:pt-60">
+            Chargement du projet…
+          </div>
+        </section>
+        <Footer />
+      </>
+    );
+  }
 
   if (!project) return <Navigate to="/projets" replace />;
 
@@ -26,7 +61,7 @@ export default function ProjectDetail() {
                      lg:pt-60 lg:pb-48"
         >
           <p className="text-sm font-medium text-white sm:text-[15px]">
-            {project.categories.join(" · ")}
+            {(project.categories || []).join(" · ") || "Projet"}
           </p>
           <h1
             className="mt-2 font-black uppercase tracking-tight text-[#f6dcbf]
